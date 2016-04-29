@@ -9,8 +9,6 @@ import com.example.bigbrass.chunky.R;
 
 public class MainActivity extends AppCompatActivity {
 
-    //Nothing has changed, everything is different.
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
