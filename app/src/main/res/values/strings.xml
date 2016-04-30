@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Chunky</string>
+    <!--Homepage Text-->
+    <string name="welcome_screen">Welcome to Chunky!</string>
+    <string name="new_game_button">New Game (nope)</string>
+    <string name="about_button">About</string>
+    <!--About Text-->
+    <string name="about_screen">About Chunky</string>
+    <string name="return_home">Return Home</string>
 </resources>

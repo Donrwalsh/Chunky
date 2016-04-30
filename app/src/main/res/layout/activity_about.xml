@@ -15,27 +15,18 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:gravity="center"
-        android:text="@string/welcome_screen"
+        android:text="@string/about_screen"
         android:textSize="25sp"
         android:typeface="serif" />
 
     <Button
-        android:id="@+id/new_game_button"
+        android:id="@+id/return_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="100dp"
-        android:text="@string/new_game_button"
+        android:text="Return to Home"
+        android:onClick="returnHome"
         android:typeface="serif" />
-
-    <Button
-        android:id="@+id/about_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="140dp"
-        android:text="@string/about_button"
-        android:typeface="serif"
-        android:onClick="openAbout"/>
 
 </LinearLayout>
