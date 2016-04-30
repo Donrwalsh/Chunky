@@ -25,6 +25,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="100dp"
+        android:onClick="openGameScreen"
         android:text="@string/new_game_button"
         android:typeface="serif" />
 
@@ -34,8 +35,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="140dp"
+        android:onClick="openAbout"
         android:text="@string/about_button"
-        android:typeface="serif"
-        android:onClick="openAbout"/>
+        android:typeface="serif" />
 
 </LinearLayout>

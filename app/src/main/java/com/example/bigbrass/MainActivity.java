@@ -24,5 +24,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void openGameScreen(View view)
+    {
+        Intent intent = new Intent(this, GameScreen.class);
+        startActivity(intent);
+    }
+
 
 }
