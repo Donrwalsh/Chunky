@@ -33,5 +33,10 @@ public class GameScreen extends AppCompatActivity {
         TextView random20 = (TextView)findViewById(R.id.textViewd20);
         random20.setText("d20:" + d20Roll);
 
+        final Random d2 = new Random();
+        int d2Roll = d2.nextInt(2) + 1;
+        TextView random2 = (TextView)findViewById(R.id.textViewcoin);
+        random2.setText("d2:" + d2Roll);
+
     }
 }
