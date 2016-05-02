@@ -1,5 +1,7 @@
 package com.example.bigbrass;
 
+import android.widget.Button;
+import android.graphics.Typeface;
 import android.content.Intent;
 import android.view.View;
 import android.view.WindowManager;
@@ -16,6 +18,11 @@ public class MainActivity extends AppCompatActivity {
         //Remove notification bar
         this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_main);
+
+        //Change "Play" button to Unique font
+        Button n=(Button) findViewById(R.id.new_game_button);
+        Typeface typeface = Typeface.createFromAsset(getAssets(), "Unique.ttf");
+        n.setTypeface(typeface);
     }
 
     public void openAbout(View view)

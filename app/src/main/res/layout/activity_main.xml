@@ -8,35 +8,35 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.bigbrass.MainActivity">
+    android:background="@drawable/home"
+    tools:context="com.example.bigbrass.MainActivity"
+    android:weightSum="1">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:gravity="center"
-        android:text="@string/welcome_screen"
-        android:textSize="25sp"
-        android:typeface="serif" />
-
-    <Button
-        android:id="@+id/new_game_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="100dp"
-        android:onClick="openGameScreen"
-        android:text="@string/new_game_button"
-        android:typeface="serif" />
 
     <Button
         android:id="@+id/about_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="140dp"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="18dp"
+        android:layout_marginRight="40dp"
         android:onClick="openAbout"
-        android:text="@string/about_button"
-        android:typeface="serif" />
+        android:background="@drawable/i" />
+
+    <Button
+        android:id="@+id/new_game_button"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:onClick="openGameScreen"
+        android:text="@string/new_game_button"
+        android:typeface="serif"
+        android:layout_marginBottom="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="450dp"
+        android:layout_gravity="center_horizontal"
+        android:background="#673AB7"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
 
 </LinearLayout>
