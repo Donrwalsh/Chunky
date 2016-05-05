@@ -21,22 +21,5 @@ public class GameScreen extends AppCompatActivity {
         setContentView(R.layout.activity_game_screen);
     }
 
-    public void randomInt(View view)
-    {
-        final Random d6 = new Random();
-        int d6Roll = d6.nextInt(6) + 1;
-        TextView random = (TextView)findViewById(R.id.textViewd6);
-        random.setText("d6:" + d6Roll);
 
-        final Random d20 = new Random();
-        int d20Roll = d20.nextInt(20) + 1;
-        TextView random20 = (TextView)findViewById(R.id.textViewd20);
-        random20.setText("d20:" + d20Roll);
-
-        final Random d2 = new Random();
-        int d2Roll = d2.nextInt(2) + 1;
-        TextView random2 = (TextView)findViewById(R.id.textViewcoin);
-        random2.setText("d2:" + d2Roll);
-
-    }
 }

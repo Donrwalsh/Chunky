@@ -20,7 +20,8 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.bigbrass.About" />
-        <activity android:name="com.example.bigbrass.GameScreen"></activity>
+        <activity android:name="com.example.bigbrass.GameScreen"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
