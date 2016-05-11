@@ -12,70 +12,68 @@
 
     <ImageView
         android:id="@+id/apostrophes"
-        android:layout_width="160dp"
-        android:layout_height="30dp"
-        android:gravity="top"
+        android:layout_width="@dimen/game_button_width"
+        android:layout_height="@dimen/game_button_height"
+        android:gravity="center_horizontal"
         android:src="@drawable/gapost"
         android:scaleType="fitXY"
         android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_centerHorizontal="true" />
 
     <ImageView
         android:id="@+id/facetouching"
-        android:layout_width="160dp"
-        android:layout_height="30dp"
-        android:gravity="top"
+        android:layout_width="@dimen/game_button_width"
+        android:layout_height="@dimen/game_button_height"
+        android:gravity="center_horizontal"
         android:scaleType="fitXY"
         android:src="@drawable/gfacet"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_below="@+id/apostrophes"
+        android:layout_alignLeft="@+id/apostrophes"
+        android:layout_marginTop="10dp"
+        android:layout_alignStart="@+id/apostrophes" />
 
     <ImageView
         android:id="@+id/cursin"
-        android:layout_width="160dp"
-        android:layout_height="30dp"
-        android:gravity="top"
+        android:layout_width="@dimen/game_button_width"
+        android:layout_height="@dimen/game_button_height"
+        android:gravity="center_horizontal"
         android:scaleType="fitXY"
         android:src="@drawable/gcursin"
-        android:layout_alignTop="@+id/drinkinhand"
+        android:layout_below="@+id/facetouching"
         android:layout_alignLeft="@+id/facetouching"
-        android:layout_alignStart="@+id/facetouching" />
+        android:layout_marginTop="10dp" />
 
     <ImageView
         android:id="@+id/drinkinhand"
-        android:layout_width="160dp"
-        android:layout_height="30dp"
-        android:gravity="top"
+        android:layout_width="@dimen/game_button_width"
+        android:layout_height="@dimen/game_button_height"
+        android:gravity="center_horizontal"
         android:scaleType="fitXY"
         android:src="@drawable/gdih"
-        android:layout_below="@+id/apostrophes"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp" />
+        android:layout_below="@+id/cursin"
+        android:layout_alignLeft="@+id/cursin"
+        android:layout_marginTop="10dp" />
 
     <ImageView
         android:id="@+id/names"
-        android:layout_width="160dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/game_button_width"
+        android:layout_height="@dimen/game_button_height"
         android:gravity="top"
         android:scaleType="fitXY"
         android:src="@drawable/gnames"
         android:layout_below="@+id/drinkinhand"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="25dp" />
+        android:layout_alignLeft="@+id/drinkinhand"
+        android:layout_marginTop="10dp" />
 
     <ImageView
         android:id="@+id/accents"
-        android:layout_width="160dp"
-        android:layout_height="30dp"
+        android:layout_width="@dimen/game_button_width"
+        android:layout_height="@dimen/game_button_height"
         android:gravity="top"
         android:scaleType="fitXY"
         android:src="@drawable/gaccents"
-        android:layout_alignTop="@+id/names"
-        android:layout_alignLeft="@+id/cursin"
-        android:layout_alignStart="@+id/cursin" />
+        android:layout_below="@+id/names"
+        android:layout_alignLeft="@+id/names"
+        android:layout_marginTop="10dp" />
 
 </RelativeLayout>

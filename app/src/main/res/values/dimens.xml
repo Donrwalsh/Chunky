@@ -1,5 +1,8 @@
 <resources>
-    <!-- Default screen margins, per the Android Design guidelines. -->
+    <!-- Default screen margins, per the Android Design guidelines. Used for RelativeLayout margins -->
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Buttons on the Gamescreen -->
+    <dimen name="game_button_height">51dp</dimen>
+    <dimen name="game_button_width">274dp</dimen>
 </resources>
