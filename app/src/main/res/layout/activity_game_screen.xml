@@ -18,7 +18,8 @@
         android:src="@drawable/gapost"
         android:scaleType="fitXY"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:tag="off"/>
 
     <ImageView
         android:id="@+id/facetouching"
@@ -59,6 +60,7 @@
         android:layout_width="@dimen/game_button_width"
         android:layout_height="@dimen/game_button_height"
         android:gravity="top"
+        android:tag="off"
         android:scaleType="fitXY"
         android:src="@drawable/gnames"
         android:layout_below="@+id/drinkinhand"
@@ -75,5 +77,39 @@
         android:layout_below="@+id/names"
         android:layout_alignLeft="@+id/names"
         android:layout_marginTop="10dp" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Heads"
+        android:onClick="Guess"
+        android:id="@+id/heads"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="Tails"
+        android:onClick="Guess"
+        android:id="@+id/tails"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:visibility="invisible" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text=""
+        android:id="@+id/notif"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/accents"
+        android:layout_centerHorizontal="true" />
+
 
 </RelativeLayout>
