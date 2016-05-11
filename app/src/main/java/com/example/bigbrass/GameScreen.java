@@ -134,6 +134,11 @@ public class GameScreen extends AppCompatActivity {
     protected void onPause() {
         mSensorManager.unregisterListener(mSensorListener);
         super.onPause();
-
     }
+
+    @Override
+    public void onBackPressed() {
+        // do nothing. We want to force user to stay in this activity and not drop out.
+    }
+
 }
