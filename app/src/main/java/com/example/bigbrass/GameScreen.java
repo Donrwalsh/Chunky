@@ -63,7 +63,7 @@ public class GameScreen extends AppCompatActivity {
         if (d20Roll == 5) {notif.append("You rolled a 5:\n Explosive Revelation! ");}
         if (d20Roll == 6) {notif.append("You rolled a 6:\n Clothes, article of, non-dealer)");}
         if (d20Roll == 7) {
-            notif.append("You rolled a 7:\n Apostrophes\n(May God have mercy on your soul)\n");
+            notif.append("You rolled a 7:\n Apostrophes toggles\n(May God have mercy on your soul)\n");
             ImageView apost = (ImageView) findViewById(R.id.apostrophes);
             if (apost.getTag().toString().equals("off")) {
                 apost.setImageResource(R.drawable.rapost);
@@ -73,7 +73,7 @@ public class GameScreen extends AppCompatActivity {
                 apost.setTag("off");
             }
         }
-        if (d20Roll == 8) {notif.append("You rolled an 8:\n Names, No present");
+        if (d20Roll == 8) {notif.append("You rolled an 8:\n Names toggles");
             ImageView names = (ImageView) findViewById(R.id.names);
             if (names.getTag().toString().equals("off")){
                 names.setImageResource(R.drawable.rnames);
@@ -83,6 +83,57 @@ public class GameScreen extends AppCompatActivity {
                 names.setTag("off");
             }
         }
+        if (d20Roll == 9) {notif.append("You rolled a 9:\n Cursin's toggles\n");
+            notif.append("(Ass, Damn, Shit, Fuck, Bitch, Cactus)");
+            ImageView cursin = (ImageView) findViewById(R.id.cursin);
+            if (cursin.getTag().toString().equals("off")){
+                cursin.setImageResource(R.drawable.rcursin);
+                cursin.setTag("on");
+            } else {
+                cursin.setImageResource(R.drawable.gcursin);
+                cursin.setTag("off");
+            }
+        }
+        if (d20Roll == 10) {notif.append("You rolled a 10:\n FaceTouching toggles\n");
+            ImageView facetouching = (ImageView) findViewById(R.id.facetouching);
+            if (facetouching.getTag().toString().equals("off")){
+                facetouching.setImageResource(R.drawable.rfacet);
+                facetouching.setTag("on");
+            } else {
+                facetouching.setImageResource(R.drawable.gcursin);
+                facetouching.setTag("off");
+            }
+        }
+        if (d20Roll == 11) {notif.append("You rolled an 11:\n Drink-in-Hand toggles\n");
+            ImageView drinkinhand = (ImageView) findViewById(R.id.drinkinhand);
+            if (drinkinhand.getTag().toString().equals("off")){
+                drinkinhand.setImageResource(R.drawable.rdih);
+                drinkinhand.setTag("on");
+            } else {
+                drinkinhand.setImageResource(R.drawable.gdih);
+                drinkinhand.setTag("off");
+            }
+        }
+        if (d20Roll == 12) {notif.append("You rolled an 12:\n Accents toggles\n");
+            ImageView accents = (ImageView) findViewById(R.id.accents);
+            if (accents.getTag().toString().equals("off")){
+                accents.setImageResource(R.drawable.rdih);
+                accents.setTag("on");
+            } else {
+                accents.setImageResource(R.drawable.gdih);
+                accents.setTag("off");
+            }
+        }
+        if (d20Roll == 13) {notif.append("You rolled a 13:\n You are now the drink and trash bitch\n");}
+        if (d20Roll == 14) {notif.append("You rolled a 14:\n Never-have-I-ever, 3 fingers\n");}
+        if (d20Roll == 15) {notif.append("You rolled a 15:\n Social!\n");}
+        if (d20Roll == 16) {notif.append("You rolled a 16:\n Rhymes, filthy filthy rhymes\n");}
+        if (d20Roll == 17) {notif.append("You rolled a 17:\n Ladies, take a drink!\n");}
+        if (d20Roll == 18) {notif.append("You rolled an 18:\n Fellas, take a drink!\n");}
+        if (d20Roll == 19) {notif.append("You rolled a 19:\n Make a rule!\n");}
+        if (d20Roll == 20) {notif.append("You rolled a 20:\n Chunky Cup. May God have mercy on your soul\n");}
+
+
 
     }
 
