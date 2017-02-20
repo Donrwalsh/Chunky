@@ -44,7 +44,7 @@ public class GameScreen extends AppCompatActivity {
         final Random d20 = new Random();
         int d2Roll = d2.nextInt(2) + 1;
         int d6Roll = d6.nextInt(6) + 1;
-        int d20Roll = d20.nextInt(8) + 1;
+        int d20Roll = d20.nextInt(20) + 1;
 
         TextView notif = (TextView) findViewById(R.id.notif);
         if (d2Roll == 1) {
